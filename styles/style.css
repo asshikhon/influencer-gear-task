@@ -28,6 +28,7 @@
   font-weight: 700;
   margin-top: 16px;
   border: none;
+display: flex;
 }
 
 /* Header Sections Start */
@@ -180,9 +181,79 @@ background: #FFF;
 }
 .card img{
     width: 100%;
-  
 
 }
+
+
+
+/* Featured products at one place styles */
+
+.featured-section{
+    width: 77%;
+    max-width: 1440px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 96px;
+}
+.featured-content h1{
+    color: #0A0826;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: "Poppins", sans-serif;
+font-size: 38px;
+font-weight: 700;
+line-height: 60px; /* 157.895% */
+padding: 16px 0;
+}
+.featured-content .featured-description{
+   
+height: 88px;
+color: #6C6C6C;
+font-family: "Poppins", sans-serif;
+font-size: 16px;
+font-weight: 700;
+}
+.primary-btn1{
+    color: #FFF;
+font-family: "Poppins", sans-serif;
+font-size: 16px;
+font-weight: 700;
+    display: inline-flex;
+padding: 10px 24px;
+align-items: flex-start;
+gap: 8px;
+background: #E02C6D;
+align-items: center;
+border: 0;
+}
+
+/* footer section styles */
+.footer-container{
+width: 100%;
+height: 239px;
+/* max-width: 1440px; */
+background: #0A0826;
+text-align: center;
+padding-top: 50px;
+margin-top: 100px;
+}
+.footer-conten{
+
+}
+.footer-title{
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+.footer-description{
+color: #D9DBE1;
+padding-top: 3px;
+font-family: "Manrope", sans-serif;
+}
+
 
 /* Responsive media queries */
 /* mobile devices */
@@ -196,7 +267,7 @@ background: #FFF;
   {
     flex-direction: column;
   }
-  .banner{
+  .banner, .featured-section{
     flex-direction: column-reverse;
   }
   .logo-container .logo-img-container{
@@ -216,5 +287,8 @@ background: #FFF;
   }
   .btn button{
     left: 310px;
+  }
+  .primary-btn1{
+    margin-top: 20px;
   }
 }
