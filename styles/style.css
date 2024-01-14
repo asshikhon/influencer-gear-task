@@ -107,7 +107,7 @@ nav li a {
     display: flex;
     justify-content: space-evenly;
     gap: 60px;
-    margin: auto;
+    margin:35px auto;
 }
 
 /* popular collection section styles */
@@ -263,7 +263,7 @@ font-family: "Manrope", sans-serif;
     margin: ;
     text-align: center;
   }
-  nav, nav ul, 
+  nav, nav ul
   {
     flex-direction: column;
   }
@@ -288,7 +288,58 @@ font-family: "Manrope", sans-serif;
   .btn button{
     left: 310px;
   }
+  .primary-btn{
+    position: relative;
+    left: 100px;
+    margin-top: 30px;
+  }
   .primary-btn1{
     margin-top: 20px;
   }
 }
+
+/* medium device query */
+@media screen and (min-width: 576px) and (max-width:992px) {
+    header{
+        padding: 10px 50px;
+        margin: ;
+        text-align: center;
+      }
+      nav
+      {
+        flex-direction: column;
+      }
+      .banner, .featured-section{
+        flex-direction: column-reverse;
+      }
+      .logo-container .logo-img-container{
+        margin: auto;
+        flex-wrap: wrap;
+      }
+      .logo-container .logo-img-container img{
+        width: 8%;
+        gap: 2px;
+        height: auto;
+      }
+      .images{
+        margin-bottom: 30px;
+      }
+      .popular-div{
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .btn button{
+        left: 380px;
+      }
+      .primary-btn1{
+        margin-top: 20px;
+      }
+      .logo-container{
+       display: flex;
+      }
+      .primary-btn{
+        position: relative;
+        left: 200px;
+        margin-top: 30px;
+      }
+    }
+    
